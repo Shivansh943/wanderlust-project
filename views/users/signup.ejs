@@ -1,0 +1,38 @@
+<% layout("/layouts/boilerplate") %>
+
+<link rel="stylesheet" href="/css/signup.css"> <!-- Link your CSS file -->
+
+<div class="container-fluid signup-container">
+    <div class="row flex-grow-1">
+        <!-- Left Side Image -->
+        <div class="col-md-6 left-pane d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
+            <h2 class="display-6">“Travel is the only thing you buy<br>that makes you richer.”</h2>
+        </div>
+
+        <!-- Right Side Form -->
+        <div class="col-md-6 col-12 right-pane d-flex flex-column justify-content-center">
+            <h1 class="mb-4 text-center">Signup on WanderLust</h1>
+            <form action="/signup" method="POST" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="username" class="form-label"><b>Username</b></label>
+                    <input name="username" id="username" type="text" class="form-control" required />
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label"><b>Email</b></label>
+                    <input name="email" id="email" type="email" class="form-control" required />
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label"><b>Password</b></label>
+                    <input name="password" id="password" type="password" class="form-control" required />
+                    <div class="valid-feedback">Password looks strong!</div>
+                </div>
+
+                <button class="btn btn-success w-100">Signup</button>
+            </form>
+        </div>
+    </div>
+</div>
